@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initFilterBar();
   initNavToggle();
   initSmoothScroll();
+  initBackToTop();
   document.getElementById("year").textContent = new Date().getFullYear();
 });
 
@@ -96,6 +97,29 @@ function initNavToggle() {
       nav.classList.remove("is-open");
       toggle.setAttribute("aria-expanded", "false");
     });
+  });
+}
+
+/* -----------------------------------------------------------
+   4b. Floating "Back to Top" button
+   Appears once the user has scrolled past the hero, and
+   smoothly returns them to the top of the page on click.
+   ----------------------------------------------------------- */
+function initBackToTop() {
+  const button = document.getElementById("backToTop");
+  if (!button) return;
+
+  const SHOW_AFTER_PX = 480;
+
+  const toggleVisibility = () => {
+    button.classList.toggle("is-visible", window.scrollY > SHOW_AFTER_PX);
+  };
+
+  toggleVisibility();
+  window.addEventListener("scroll", toggleVisibility, { passive: true });
+
+  button.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
 }
 
