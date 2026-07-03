@@ -40,10 +40,24 @@ function renderGallery(filter) {
 
 function buildCardHTML(project) {
   const tags = project.tags.map((tag) => `<span class="tag">${escapeHTML(tag)}</span>`).join("");
+  const hasImage = Boolean(project.image && project.image.trim());
+
+  // If a real photo is set, render it; otherwise (or if it fails to load)
+  // fall back to the icon + gradient placeholder so the card never breaks.
+  const thumbHTML = hasImage
+    ? `<img
+         src="${escapeHTML(project.image)}"
+         alt="${escapeHTML(project.title)}"
+         loading="lazy"
+         onerror="this.closest('.project-thumb').classList.add('is-fallback'); this.remove();"
+       >
+       <div class="thumb-fallback"><i class="${escapeHTML(project.icon)}"></i></div>`
+    : `<div class="thumb-fallback"><i class="${escapeHTML(project.icon)}"></i></div>`;
+
   return `
     <article class="project-card" data-category="${escapeHTML(project.category)}">
-      <div class="project-thumb" style="--thumb-a:${project.thumbA}; --thumb-b:${project.thumbB};">
-        <i class="${escapeHTML(project.icon)}"></i>
+      <div class="project-thumb${hasImage ? "" : " is-fallback"}" style="--thumb-a:${project.thumbA}; --thumb-b:${project.thumbB};">
+        ${thumbHTML}
         <span class="sparkle">✦</span>
       </div>
       <div class="project-body">
