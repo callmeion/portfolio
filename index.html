@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pattarawarin Arunsawat — Portfolio</title>
+  <meta name="description" content="Pattarawarin Arunsawat — PA to AVP, Creative Technologist & Culture Catalyst. Graphic design, web/dashboard development, and organizational culture portfolio.">
+
+  <!-- Google Fonts: Playfair Display (serif display) + Inter (sans body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient background glows -->
+  <div class="aurora aurora--one" aria-hidden="true"></div>
+  <div class="aurora aurora--two" aria-hidden="true"></div>
+  <div class="aurora aurora--three" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="logo">PA</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#print-design" class="nav-link"><span class="arrow">↗</span> Print Design</a>
+        <a href="#social-media" class="nav-link"><span class="arrow">↗</span> Social Media</a>
+        <a href="#branding" class="nav-link"><span class="arrow">↗</span> Branding</a>
+        <a href="#ads" class="nav-link"><span class="arrow">↗</span> Ads</a>
+        <a href="#illustration" class="nav-link"><span class="arrow">↗</span> Illustration</a>
+        <a href="#projects" class="nav-link"><span class="arrow">↗</span> Projects</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow"><i class="fa-solid fa-sparkle"></i> Creative Technologist &amp; Culture Catalyst</p>
+      <h1 class="hero-title">
+        PORT<br>FOLIO
+      </h1>
+      <p class="hero-name">Pattarawarin Arunsawat</p>
+      <span class="badge badge--dark">Graphic Designer, Tech Developer &amp; Org Culture Driver</span>
+    </div>
+    <div class="hero-star hero-star--a" aria-hidden="true">✦</div>
+    <div class="hero-star hero-star--b" aria-hidden="true">✧</div>
+    <div class="hero-star hero-star--c" aria-hidden="true">✦</div>
+  </section>
+
+  <!-- ===================== ABOUT + SKILLS ===================== -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-copy">
+        <p class="section-eyebrow">01 — About</p>
+        <h2 class="section-heading">PA to AVP,<br>and the person who<br>makes the deck sing.</h2>
+        <p class="about-lede">
+          A multidisciplinary professional blending executive administration with graphic and video design,
+          web &amp; dashboard development, AI-assisted workflow design, and organizational culture building —
+          from internal communications to gamified learning and cybersecurity awareness.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">6+</span>
+            <span class="stat-label">Years hands-on experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Disciplines in one role</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Tools mastered</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-matrix">
+        <p class="section-eyebrow">02 — Skills Matrix</p>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fa-solid fa-briefcase skill-icon"></i>
+            <h3>Executive Support</h3>
+            <ul>
+              <li>Calendar &amp; travel management</li>
+              <li>Executive reporting</li>
+              <li>Meeting &amp; minutes coordination</li>
+              <li>Stakeholder liaison</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-palette skill-icon"></i>
+            <h3>Creative Design</h3>
+            <ul>
+              <li>Photoshop, Illustrator, InDesign</li>
+              <li>Video editing &amp; motion</li>
+              <li>Print &amp; social layout</li>
+              <li>Brand visual systems</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-code skill-icon"></i>
+            <h3>Tech &amp; Dev</h3>
+            <ul>
+              <li>HTML, CSS, React</li>
+              <li>PHP, SQL</li>
+              <li>AI workflow automation</li>
+              <li>UI/UX &amp; dashboard design</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-people-group skill-icon"></i>
+            <h3>People &amp; Culture</h3>
+            <ul>
+              <li>Training design &amp; delivery</li>
+              <li>Internal communications</li>
+              <li>Gamified learning</li>
+              <li>Cybersecurity awareness</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PORTFOLIO GALLERY ===================== -->
+  <section class="gallery" id="portfolio">
+    <div class="gallery-inner">
+      <p class="section-eyebrow">03 — Selected Work</p>
+      <h2 class="section-heading">Portfolio Gallery</h2>
+
+      <div class="filter-bar" id="filterBar" role="tablist" aria-label="Filter portfolio by category">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="print" id="print-design">Print Design</button>
+        <button class="filter-btn" data-filter="social" id="social-media">Social Media</button>
+        <button class="filter-btn" data-filter="branding" id="branding">Branding</button>
+        <button class="filter-btn" data-filter="ads" id="ads">Ads</button>
+        <button class="filter-btn" data-filter="illustration" id="illustration">Illustration</button>
+        <button class="filter-btn" data-filter="projects" id="projects">Projects</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Cards injected by script.js from data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURED DEEP-DIVE PROJECTS ===================== -->
+  <section class="deep-dive" id="deep-dive">
+    <div class="deep-dive-inner">
+      <p class="section-eyebrow">04 — The Hybrid Showcase</p>
+      <h2 class="section-heading">Featured Deep-Dive Projects</h2>
+
+      <article class="case-study">
+        <div class="case-media" aria-hidden="true">
+          <div class="mock-window mock-window--onboarding">
+            <span class="mock-star">✦</span>
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+        </div>
+        <div class="case-copy">
+          <span class="case-tag">Corporate Culture · Internal Comms</span>
+          <h3>Corporate Culture &amp; Gamified Onboarding</h3>
+          <p>
+            Designed a points-and-badges onboarding journey that turns first-week paperwork into a guided
+            game. New hires unlock internal comms media, mini-quizzes, and team intros as they progress,
+            replacing a static welcome PDF with an experience people actually finish.
+          </p>
+          <ul class="case-stats">
+            <li><strong>+42%</strong> onboarding completion rate <span class="mock-note">(mocked)</span></li>
+            <li><strong>4.8/5</strong> new-hire satisfaction score <span class="mock-note">(mocked)</span></li>
+          </ul>
+          <div class="case-tools">
+            <span class="tag">Illustrator</span>
+            <span class="tag">InDesign</span>
+            <span class="tag">Gamification Design</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study case-study--reverse">
+        <div class="case-media" aria-hidden="true">
+          <div class="mock-window mock-window--security">
+            <span class="mock-star">✧</span>
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+        </div>
+        <div class="case-copy">
+          <span class="case-tag">Training &amp; Awareness</span>
+          <h3>Enterprise Cybersecurity Awareness Training</h3>
+          <p>
+            Planned and delivered online and onsite security-awareness sessions, paired with a set of
+            plain-language warning infographics. Ran phishing-simulation campaigns to measure real
+            behavior change rather than just quiz scores.
+          </p>
+          <ul class="case-stats">
+            <li><strong>-58%</strong> phishing click-through, quarter over quarter <span class="mock-note">(mocked)</span></li>
+            <li><strong>90%+</strong> training completion across departments <span class="mock-note">(mocked)</span></li>
+          </ul>
+          <div class="case-tools">
+            <span class="tag">Infographic Design</span>
+            <span class="tag">Phishing Simulation</span>
+            <span class="tag">Onsite Facilitation</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study">
+        <div class="case-media" aria-hidden="true">
+          <div class="mock-window mock-window--dashboard">
+            <span class="mock-star">✦</span>
+            <div class="mock-dash">
+              <div class="mock-bar" style="--h:40%"></div>
+              <div class="mock-bar" style="--h:70%"></div>
+              <div class="mock-bar" style="--h:55%"></div>
+              <div class="mock-bar" style="--h:85%"></div>
+              <div class="mock-bar" style="--h:60%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="case-copy">
+          <span class="case-tag">Web &amp; Dashboard Development</span>
+          <h3>Utility &amp; Management Dashboard</h3>
+          <p>
+            Built a dark/light-mode executive reporting dashboard, from wireframe to working prototype.
+            The interface pulls dummy data to illustrate real-time reporting patterns, backed by a
+            React front end, PHP services, and a SQL data layer.
+          </p>
+          <ul class="case-stats">
+            <li><strong>-35%</strong> time spent compiling weekly reports <span class="mock-note">(mocked)</span></li>
+            <li><strong>2</strong> themes, fully responsive <span class="mock-note">(dark / light)</span></li>
+          </ul>
+          <div class="case-tools">
+            <span class="tag">React</span>
+            <span class="tag">PHP</span>
+            <span class="tag">SQL</span>
+            <span class="tag">UI/UX</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <p class="footer-name">Pattarawarin Arunsawat</p>
+        <div class="footer-links">
+          <a href="mailto:pattarawarin.ar@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+      <hr class="footer-rule">
+      <p class="disclaimer">
+        <i class="fa-solid fa-circle-info"></i>
+        All projects shown are anonymized case studies presented for portfolio purposes only.
+        Company names, employee data, and dashboard figures have been mocked or generalized;
+        no proprietary, confidential, or client business data is displayed.
+      </p>
+      <p class="footer-copy">© <span id="year"></span> Pattarawarin Arunsawat. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
