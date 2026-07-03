@@ -497,12 +497,30 @@ body::before {
   font-size: 30px;
   color: var(--color-accent);
   position: relative;
+  overflow: hidden;
 }
+.project-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* Icon placeholder: hidden behind a real photo unless the thumb has no
+   image (is-fallback), in which case it's the only thing shown. */
+.thumb-fallback {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.project-thumb.is-fallback .thumb-fallback { display: flex; }
 .project-thumb .sparkle {
   position: absolute;
   top: 12px; right: 14px;
   font-size: 14px;
   color: rgba(0,82,255,0.5);
+  z-index: 1;
 }
 
 .project-body { padding: 20px 22px 22px; }
