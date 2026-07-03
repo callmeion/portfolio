@@ -197,6 +197,9 @@ body::before {
   text-underline-offset: 4px;
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
 }
 .nav-link:hover { color: var(--color-accent); text-decoration-color: var(--color-accent); }
 .nav-link .arrow { display: inline-block; margin-right: 2px; }
@@ -204,7 +207,11 @@ body::before {
 .nav-toggle {
   display: none;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 5px;
+  width: 44px;
+  height: 44px;
   background: none;
   border: none;
   cursor: pointer;
@@ -215,7 +222,11 @@ body::before {
   height: 2px;
   background: var(--color-ink);
   border-radius: 2px;
+  transition: transform 0.25s ease, opacity 0.2s ease;
 }
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* =========================================================
    Hero
@@ -266,6 +277,104 @@ body::before {
 .hero-star--a { top: 18%; left: 8%; font-size: 26px; }
 .hero-star--b { top: 30%; right: 10%; font-size: 40px; }
 .hero-star--c { bottom: 12%; left: 18%; font-size: 20px; }
+
+/* -----------------------------------------------------------
+   Hero scroll cue
+   ----------------------------------------------------------- */
+.scroll-cue {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 56px;
+  color: var(--color-ink-soft);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+.scroll-cue-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-line);
+  background: var(--color-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  box-shadow: var(--shadow-card);
+  animation: bob 2.2s ease-in-out infinite;
+}
+.scroll-cue:hover .scroll-cue-arrow { border-color: var(--color-accent); }
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(7px); }
+}
+
+/* -----------------------------------------------------------
+   Section-jump arrows (bottom of each section)
+   ----------------------------------------------------------- */
+.section-jump {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: var(--container);
+  margin: 56px auto 0;
+  padding: 16px 24px;
+  min-height: 48px;
+  border-top: 1px solid var(--color-line);
+  color: var(--color-ink-soft);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: color 0.2s ease, gap 0.2s ease;
+  position: relative;
+  z-index: 1;
+}
+.section-jump i {
+  color: var(--color-accent);
+  transition: transform 0.2s ease;
+}
+.section-jump:hover { color: var(--color-accent-deep); gap: 14px; }
+.section-jump:hover i { transform: translateY(3px); }
+
+/* -----------------------------------------------------------
+   Floating back-to-top button
+   ----------------------------------------------------------- */
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 12px 26px -8px rgba(0, 82, 255, 0.55);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s, background 0.2s ease;
+  z-index: 60;
+}
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.back-to-top:hover { background: var(--color-accent-deep); }
 
 /* =========================================================
    About + Skills
@@ -345,12 +454,14 @@ body::before {
   font-size: 13.5px;
   font-weight: 600;
   padding: 9px 18px;
+  min-height: 44px;
   border-radius: 100px;
   border: 1px solid var(--color-line);
   background: var(--color-card);
   color: var(--color-ink-soft);
   cursor: pointer;
   transition: all 0.2s ease;
+  flex-shrink: 0;
 }
 .filter-btn:hover { border-color: var(--color-accent); color: var(--color-accent-deep); }
 .filter-btn.is-active {
@@ -543,6 +654,7 @@ body::before {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  min-height: 44px;
   transition: color 0.2s ease;
 }
 .footer-links a:hover { color: var(--color-accent-sky); }
@@ -578,11 +690,36 @@ body::before {
     overflow: hidden;
     transition: max-height 0.3s ease;
   }
-  .main-nav.is-open { max-height: 400px; }
-  .main-nav a { padding: 14px 32px; border-top: 1px solid var(--color-line); }
+  .main-nav.is-open { max-height: 420px; }
+  .main-nav a { padding: 14px 32px; border-top: 1px solid var(--color-line); min-height: 48px; }
   .nav-toggle { display: flex; }
+
+  /* Filter bar becomes a horizontally swipeable pill strip on mobile */
+  .filter-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    padding-bottom: 4px;
+    margin-left: -32px;
+    margin-right: -32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .filter-bar::-webkit-scrollbar { display: none; }
+  .filter-btn { scroll-snap-align: start; }
+
   .skills-grid { grid-template-columns: 1fr; }
   .gallery-grid { grid-template-columns: 1fr; }
-  .hero { padding: 60px 0 50px; }
-  .about, .gallery, .deep-dive { padding-top: 60px; padding-bottom: 60px; }
+  .hero { padding: 56px 0 40px; }
+  .about, .gallery, .deep-dive { padding-top: 52px; padding-bottom: 52px; }
+  .section-jump { margin-top: 40px; }
+  .back-to-top { right: 16px; bottom: 16px; width: 46px; height: 46px; }
+}
+
+@media (max-width: 420px) {
+  .header-inner, .hero-inner, .about-inner, .gallery-inner,
+  .deep-dive-inner, .footer-inner { padding-left: 20px; padding-right: 20px; }
+  .filter-bar { margin-left: -20px; margin-right: -20px; padding-left: 20px; padding-right: 20px; }
 }
