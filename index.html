@@ -54,6 +54,11 @@
     <div class="hero-star hero-star--a" aria-hidden="true">✦</div>
     <div class="hero-star hero-star--b" aria-hidden="true">✧</div>
     <div class="hero-star hero-star--c" aria-hidden="true">✦</div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll down to About &amp; Skills">
+      <span class="scroll-cue-label">Explore More</span>
+      <span class="scroll-cue-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></span>
+    </a>
   </section>
 
   <!-- ===================== ABOUT + SKILLS ===================== -->
@@ -129,6 +134,11 @@
         </div>
       </div>
     </div>
+
+    <a href="#portfolio" class="section-jump" aria-label="Jump to Portfolio Gallery">
+      <span>Portfolio Gallery</span>
+      <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+    </a>
   </section>
 
   <!-- ===================== PORTFOLIO GALLERY ===================== -->
@@ -151,6 +161,11 @@
         <!-- Cards injected by script.js from data.js -->
       </div>
     </div>
+
+    <a href="#deep-dive" class="section-jump" aria-label="Jump to Featured Deep-Dive Projects">
+      <span>Deep-Dive Projects</span>
+      <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+    </a>
   </section>
 
   <!-- ===================== FEATURED DEEP-DIVE PROJECTS ===================== -->
@@ -247,10 +262,15 @@
         </div>
       </article>
     </div>
+
+    <a href="#contact" class="section-jump" aria-label="Jump to Contact &amp; Footer">
+      <span>Get in Touch</span>
+      <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+    </a>
   </section>
 
   <!-- ===================== FOOTER ===================== -->
-  <footer class="site-footer">
+  <footer class="site-footer" id="contact">
     <div class="footer-inner">
       <div class="footer-top">
         <p class="footer-name">Pattarawarin Arunsawat</p>
@@ -270,6 +290,11 @@
       <p class="footer-copy">© <span id="year"></span> Pattarawarin Arunsawat. Built with HTML, CSS &amp; JavaScript.</p>
     </div>
   </footer>
+
+  <!-- Floating back-to-top button (visibility toggled by script.js) -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
 
   <script src="data.js"></script>
   <script src="script.js"></script>
