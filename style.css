@@ -557,7 +557,34 @@ body::before {
   padding: 40px 0;
   font-style: italic;
 }
+/* ===================== LANGUAGE BUTTON ===================== */
+.main-nav .btn-lang {
+  background-color: #0056b3; /* เปลี่ยนเป็นรหัสสีน้ำเงิน CI ได้เลยค่ะ */
+  color: #ffffff !important; /* บังคับให้ตัวหนังสือและไอคอนเป็นสีขาว */
+  padding: 8px 16px;
+  border-radius: 6px; /* ปรับความมนของขอบปุ่ม */
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  margin-left: 10px; /* ขยับให้ห่างจากเมนูอื่นเล็กน้อย */
+}
 
+/* เอฟเฟกต์ตอนเอาเมาส์ชี้ (Hover) */
+.main-nav .btn-lang:hover {
+  background-color: #003d82; /* สีน้ำเงินที่เข้มขึ้นตอนเอาเมาส์ชี้ค่ะ */
+  transform: translateY(-2px); /* ให้ปุ่มเด้งขึ้นนิดนึงตอนชี้ */
+}
+
+/* สำหรับหน้าจอมือถือ (Mobile Menu) เพื่อให้ปุ่มสวยงามเมื่อกดแฮมเบอร์เกอร์ */
+@media (max-width: 768px) {
+  .main-nav .btn-lang {
+    margin-left: 0;
+    margin-top: 15px;
+    width: fit-content;
+  }
+}
 /* =========================================================
    Deep-dive case studies
    ========================================================= */
