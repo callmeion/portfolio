@@ -314,7 +314,22 @@ body::before {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(7px); }
 }
+/* สำหรับข้อความทั่วไป (เนื้อหา / ปุ่ม / เมนู) */
+body {
+  /* เบราว์เซอร์จะใช้ Inter สำหรับภาษาอังกฤษ และสลับมาใช้ Kanit อัตโนมัติสำหรับภาษาไทย */
+  font-family: 'Inter', 'Kanit', sans-serif;
+}
 
+/* สำหรับหัวข้อที่ต้องการความสวยงาม (ถ้าตั้งค่าไว้) */
+h1, h2, h3, .hero-title, .section-heading {
+  /* ภาษาอังกฤษใช้ Playfair ภาษาไทยใช้ Kanit */
+  font-family: 'Playfair Display', 'Kanit', serif;
+}
+
+/* อัปเดตฟอนต์ของปุ่มเปลี่ยนภาษาด้วยค่ะ */
+.main-nav .btn-lang {
+  font-family: 'Inter', 'Kanit', sans-serif;
+}
 /* -----------------------------------------------------------
    Section-jump arrows (bottom of each section)
    ----------------------------------------------------------- */
