@@ -557,31 +557,36 @@ body::before {
   padding: 40px 0;
   font-style: italic;
 }
-/* ===================== LANGUAGE BUTTON ===================== */
+/* ===================== LANGUAGE BUTTON (MODERN) ===================== */
 .main-nav .btn-lang {
-  background-color: #0056b3; /* เปลี่ยนเป็นรหัสสีน้ำเงิน CI ได้เลยค่ะ */
-  color: #ffffff !important; /* บังคับให้ตัวหนังสือและไอคอนเป็นสีขาว */
-  padding: 8px 16px;
-  border-radius: 6px; /* ปรับความมนของขอบปุ่ม */
+  background-color: #0052ff; /* สีน้ำเงิน CI โมเดิร์น */
+  color: #ffffff !important;
+  padding: 10px 20px; /* ปรับพื้นที่สัดส่วนให้ปุ่มดูสวยงาม */
+  border-radius: 12px; /* ความโค้งมนแบบสี่เหลี่ยมยุคใหม่ (Modern Radius) */
+  font-family: 'Inter', sans-serif; /* อิงตามฟอนต์ของเว็บ */
   font-weight: 600;
+  font-size: 0.95rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
-  margin-left: 10px; /* ขยับให้ห่างจากเมนูอื่นเล็กน้อย */
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* เอฟเฟกต์ Transition ที่ดูสมูทขึ้น */
+  box-shadow: 0 4px 14px 0 rgba(0, 82, 255, 0.3); /* เรืองแสงเงาสีน้ำเงินอ่อนๆ เพิ่มมิติ */
+  margin-left: 15px;
 }
 
 /* เอฟเฟกต์ตอนเอาเมาส์ชี้ (Hover) */
 .main-nav .btn-lang:hover {
-  background-color: #003d82; /* สีน้ำเงินที่เข้มขึ้นตอนเอาเมาส์ชี้ค่ะ */
-  transform: translateY(-2px); /* ให้ปุ่มเด้งขึ้นนิดนึงตอนชี้ */
+  background-color: #0044d6; /* สีน้ำเงินเข้มขึ้นเล็กน้อย */
+  transform: translateY(-2px); /* ลอยขึ้นนิดนึงเวลาชี้ */
+  box-shadow: 0 6px 20px 0 rgba(0, 82, 255, 0.4); /* เงากระจายตัวขึ้น */
 }
 
-/* สำหรับหน้าจอมือถือ (Mobile Menu) เพื่อให้ปุ่มสวยงามเมื่อกดแฮมเบอร์เกอร์ */
+/* สำหรับหน้าจอมือถือ (Mobile Menu) */
 @media (max-width: 768px) {
   .main-nav .btn-lang {
     margin-left: 0;
-    margin-top: 15px;
+    margin-top: 20px;
     width: fit-content;
   }
 }
