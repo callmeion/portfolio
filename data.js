@@ -141,7 +141,7 @@ const PROJECTS = [
     icon: "fa-solid fa-box-open",
     thumbA: "#fde047",
     thumbB: "#fef08a"
-  }
+  },
   {
     id: "illustration-hr-recruitment",
     title: "HR On Tour Booth Illustrations",
