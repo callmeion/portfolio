@@ -23,151 +23,126 @@
 
 const PROJECTS = [
   {
-    id: "print-annual-report",
-    title: "Anonymized Annual Report Layout",
+    id: "print-school-brochure",
+    title: "School Brochure Design",
     category: "print",
     categoryLabel: "Print Design",
-    description: "Editorial layout system for a corporate annual report, designed around a modular grid and mocked figures.",
+    description: "ออกแบบสื่อสิ่งพิมพ์ประเภทหนังสือแนะนำโรงเรียนประภัสสรวิทยา ระดับปฐมวัย[cite: 1]",
     tags: ["InDesign", "Editorial Layout", "Print"],
-    image: "images/001.jpg", // e.g. "images/print-annual-report.jpg"
+    image: "images/001.jpg", 
     icon: "fa-solid fa-book-open",
     thumbA: "#dbeafe",
     thumbB: "#eff6ff"
   },
   {
-    id: "print-event-collateral",
-    title: "Internal Event Collateral Set",
+    id: "print-company-profile",
+    title: "Corporate Company Profile",
     category: "print",
     categoryLabel: "Print Design",
-    description: "Posters, badges, and signage for an internal town-hall event, unified under one visual system.",
-    tags: ["Illustrator", "Signage", "Brand Assets"],
-    image: "images/002.jpg", // e.g. "images/print-event-collateral.jpg"
-    icon: "fa-solid fa-swatchbook",
+    description: "ออกแบบรูปเล่มรายงาน Company Profile สำหรับ NSL Foods พร้อมอินโฟกราฟิกแสดงโครงสร้างธุรกิจและสาขา[cite: 2]",
+    tags: ["Illustrator", "Infographics", "Editorial Layout"],
+    image: "images/002.jpg", 
+    icon: "fa-solid fa-chart-pie",
+    thumbA: "#fed7aa",
+    thumbB: "#ffedd5"
+  },
+  {
+    id: "social-festive-csr",
+    title: "Festive & CSR Social Content",
+    category: "social",
+    categoryLabel: "Social Media",
+    description: "กราฟิกคอนเทนต์โซเชียลมีเดียสำหรับเทศกาลและวันสำคัญต่างๆ เช่น วันคุ้มครองโลก และวันสงกรานต์[cite: 3]",
+    tags: ["Photoshop", "Content Creator", "Social Media"],
+    image: "images/003.jpg", 
+    icon: "fa-solid fa-images",
+    thumbA: "#bbf7d0",
+    thumbB: "#dcfce7"
+  },
+  {
+    id: "event-exhibition-booth",
+    title: "Exhibition Event Collateral",
+    category: "print",
+    categoryLabel: "Event Design",
+    description: "ออกแบบสื่อโฆษณาและกราฟิกสำหรับบูธแสดงสินค้าในงาน THAIFEX-Anuga Asia 2024[cite: 4]",
+    tags: ["Illustrator", "Signage", "Booth Design"],
+    image: "images/004.jpg", 
+    icon: "fa-solid fa-store",
+    thumbA: "#fed7aa",
+    thumbB: "#ffedd5"
+  },
+  {
+    id: "corporate-pr-esg",
+    title: "Corporate PR & ESG Updates",
+    category: "social",
+    categoryLabel: "Corporate Comms",
+    description: "สื่อประชาสัมพันธ์ภาพลักษณ์องค์กร สรุปผลงานด้านความยั่งยืน (ESG) และงาน Opportunity Day[cite: 5]",
+    tags: ["Infographics", "PR", "Illustrator"],
+    image: "images/005.jpg", 
+    icon: "fa-solid fa-bullhorn",
+    thumbA: "#a7f3d0",
+    thumbB: "#d1fae5"
+  },
+  {
+    id: "internal-comms-poster",
+    title: "Internal Operations Posters",
+    category: "print",
+    categoryLabel: "Internal Comms",
+    description: "โปสเตอร์สื่อสารภายในองค์กร เช่น ประกาศซ้อมหนีไฟ และแคมเปญจัดระเบียบข้อมูลของฝ่าย IT[cite: 6]",
+    tags: ["Poster Design", "Internal Comms", "Photoshop"],
+    image: "images/006.jpg", 
+    icon: "fa-solid fa-circle-exclamation",
+    thumbA: "#fecaca",
+    thumbB: "#fee2e2"
+  },
+  {
+    id: "ads-ooh-billboard",
+    title: "OOH Billboard Advertisement",
+    category: "ads",
+    categoryLabel: "Ads",
+    description: "ภาพโฆษณาสินค้าเบเกอรี่สำหรับป้ายบิลบอร์ดขนาดใหญ่ (OOH) ภายใต้คอนเซปต์ความสุขและความอร่อย[cite: 7]",
+    tags: ["OOH", "Retouching", "Photoshop"],
+    image: "images/007.jpg", 
+    icon: "fa-solid fa-rectangle-ad",
     thumbA: "#e0e7ff",
     thumbB: "#eef2ff"
   },
   {
-    id: "social-campaign-carousel",
-    title: "Internal Comms Carousel Series",
+    id: "social-creative-campaign",
+    title: "Creative Parody Campaign",
     category: "social",
     categoryLabel: "Social Media",
-    description: "A recurring carousel-post template for internal announcements, designed for fast weekly turnaround.",
-    tags: ["Photoshop", "Templates", "Internal Comms"],
-    image: "images/003.jpg", // e.g. "images/social-campaign-carousel.jpg"
-    icon: "fa-solid fa-images",
-    thumbA: "#bfdbfe",
-    thumbB: "#dbeafe"
-  },
-  {
-    id: "social-culture-highlights",
-    title: "Culture Highlights Reel",
-    category: "social",
-    categoryLabel: "Social Media",
-    description: "Short-form video highlight reel celebrating team milestones, edited for internal social channels.",
-    tags: ["Premiere Pro", "Video Editing", "Motion"],
-    image: "images/004.jpg", // e.g. "images/social-culture-highlights.jpg"
-    icon: "fa-solid fa-video",
+    description: "แคมเปญโฆษณาอาหารสัตว์เลี้ยง Pet Gourmet บน Facebook โดยใช้ไอเดียสร้างสรรค์ล้อเลียนโปสเตอร์ภาพยนตร์[cite: 8]",
+    tags: ["Creative Design", "Social Media", "Photoshop"],
+    image: "images/008.jpg", 
+    icon: "fa-solid fa-film",
     thumbA: "#c7d2fe",
     thumbB: "#e0e7ff"
   },
   {
-    id: "branding-culture-identity",
-    title: "Internal Culture Program Identity",
-    category: "branding",
-    categoryLabel: "Branding",
-    description: "Logo, color system, and iconography for a company-wide culture initiative, applied across print and digital.",
-    tags: ["Brand Identity", "Illustrator", "Guidelines"],
-    image: "images/005.jpg", // e.g. "images/branding-culture-identity.jpg"
-    icon: "fa-solid fa-star",
-    thumbA: "#bae6fd",
-    thumbB: "#e0f2fe"
-  },
-  {
-    id: "branding-training-subbrand",
-    title: "Security Training Sub-brand",
-    category: "branding",
-    categoryLabel: "Branding",
-    description: "A distinct visual sub-brand for cybersecurity training materials, kept legible and approachable.",
-    tags: ["Iconography", "Sub-brand", "Illustrator"],
-    image: "images/006.jpg", // e.g. "images/branding-training-subbrand.jpg"
-    icon: "fa-solid fa-shield-halved",
-    thumbA: "#a7d8ff",
-    thumbB: "#dbeafe"
-  },
-  {
-    id: "ads-recruitment",
-    title: "Internal Recruitment Ad Set",
+    id: "social-product-promo",
+    title: "Product Promotional Ads",
     category: "ads",
     categoryLabel: "Ads",
-    description: "A/B-tested static ad set for internal mobility postings, with anonymized engagement metrics.",
-    tags: ["Photoshop", "A/B Testing", "Copywriting"],
-    image: "", // e.g. "images/ads-recruitment.jpg"
-    icon: "fa-solid fa-bullhorn",
-    thumbA: "#dbeafe",
-    thumbB: "#f0f9ff"
+    description: "รวมผลงานกราฟิกโปรโมทสินค้าบนแพลตฟอร์มออนไลน์ เช่น ขนมตามเทศกาล สกินแคร์ และอาหารสุนัข[cite: 9]",
+    tags: ["Product Ads", "Social Media", "Commercial"],
+    image: "images/009.jpg", 
+    icon: "fa-solid fa-tag",
+    thumbA: "#fbcfe8",
+    thumbB: "#fce7f3"
   },
   {
-    id: "ads-phishing-simulation",
-    title: "Phishing Simulation Creative",
-    category: "ads",
-    categoryLabel: "Ads",
-    description: "Realistic (and safe) simulated-phishing creative used to test and train employee awareness.",
-    tags: ["Simulation Design", "Illustrator", "UX Writing"],
-    image: "images/008jpg", // e.g. "images/ads-phishing-simulation.jpg"
-    icon: "fa-solid fa-triangle-exclamation",
-    thumbA: "#e0e7ff",
-    thumbB: "#eff6ff"
-  },
-  {
-    id: "illustration-onboarding-mascot",
-    title: "Onboarding Game Mascot & Icon Set",
-    category: "illustration",
-    categoryLabel: "Illustration",
-    description: "A custom mascot and supporting icon set built for the gamified onboarding experience.",
-    tags: ["Illustrator", "Character Design", "Iconography"],
-    image: "images/009.jpg", // e.g. "images/illustration-onboarding-mascot.jpg"
-    icon: "fa-solid fa-wand-magic-sparkles",
-    thumbA: "#c7d2fe",
-    thumbB: "#dbeafe"
-  },
-  {
-    id: "illustration-infographics",
-    title: "Cybersecurity Warning Infographics",
-    category: "illustration",
-    categoryLabel: "Illustration",
-    description: "A set of clear, non-alarmist warning infographics explaining common social-engineering tactics.",
-    tags: ["Infographics", "Illustrator", "Information Design"],
-    image: "images/010.jpg", // e.g. "images/illustration-infographics.jpg"
-    icon: "fa-solid fa-diagram-project",
-    thumbA: "#bfdbfe",
-    thumbB: "#e0f2fe"
-  },
-  {
-    id: "projects-onboarding-game",
-    title: "Gamified Onboarding Platform",
-    category: "projects",
-    categoryLabel: "Projects",
-    description: "Full case study: designing an engaging, points-based onboarding journey for new hires.",
-    tags: ["UX Design", "Gamification", "Internal Comms"],
-    image: "", // e.g. "images/projects-onboarding-game.jpg"
-    icon: "fa-solid fa-gamepad",
-    thumbA: "#0052ff22",
-    thumbB: "#dbeafe"
-  },
-  {
-    id: "projects-dashboard",
-    title: "Utility & Management Dashboard",
-    category: "projects",
-    categoryLabel: "Projects",
-    description: "Full case study: a dark/light-mode executive dashboard built with React, PHP, and SQL.",
-    tags: ["React", "PHP", "SQL", "UI/UX"],
-    image: "", // e.g. "images/projects-dashboard.jpg"
-    icon: "fa-solid fa-chart-line",
-    thumbA: "#bae6fd",
-    thumbB: "#c7d2fe"
+    id: "branding-packaging",
+    title: "Pet Food Brand Identity",
+    category: "branding",
+    categoryLabel: "Branding",
+    description: "การออกแบบโลโก้และบรรจุภัณฑ์ (Packaging) สำหรับแบรนด์อาหารสุนัข Pet Gourmet พร้อม Mockup แบบ 3D[cite: 10]",
+    tags: ["Logo Design", "Packaging", "Illustrator"],
+    image: "images/010.jpg", 
+    icon: "fa-solid fa-box-open",
+    thumbA: "#fde047",
+    thumbB: "#fef08a"
   }
 ];
-
 
 /**
  * RESUME — drives resume.html (Resume & Training page)
