@@ -153,7 +153,7 @@ const PROJECTS = [
     icon: "fa-solid fa-users",
     thumbA: "#fdba74",
     thumbB: "#ffedd5"
-  }
+  },
 
 ];
 /**
