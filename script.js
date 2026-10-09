@@ -36,7 +36,8 @@ function renderGallery(filter) {
     : PROJECTS.filter((project) => project.category === filter);
 
   if (items.length === 0) {
-    grid.innerHTML = `<p class="gallery-empty">No projects in this category yet.</p>`;
+    const isThai = document.documentElement.lang === "th";
+    grid.innerHTML = `<p class="gallery-empty">${isThai ? "ยังไม่มีผลงานในหมวดนี้" : "No projects in this category yet."}</p>`;
     return;
   }
 

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pattarawarin Arunsawat — พอร์ตโฟลิโอ</title>
+  <meta name="description" content="Pattarawarin Arunsawat — ผู้ช่วยผู้บริหาร นักเทคโนโลยีสร้างสรรค์ และผู้ขับเคลื่อนวัฒนธรรมองค์กร พอร์ตโฟลิโองานออกแบบกราฟิก พัฒนาเว็บ/แดชบอร์ด และวัฒนธรรมองค์กร">
+
+<!-- Google Fonts: Playfair Display + Inter + Kanit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Kanit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient background glows -->
+  <div class="aurora aurora--one" aria-hidden="true"></div>
+  <div class="aurora aurora--two" aria-hidden="true"></div>
+  <div class="aurora aurora--three" aria-hidden="true"></div>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="logo">PA</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#about" class="nav-link" data-section="about">เกี่ยวกับฉัน</a>
+        <a href="#skills" class="nav-link" data-section="skills">ทักษะ</a>
+        <a href="#portfolio" class="nav-link" data-section="portfolio">ผลงานเด่น</a>
+        <a href="#deep-dive" class="nav-link" data-section="deep-dive">โปรเจกต์เชิงลึก</a>
+        <a href="resume-th.html" class="nav-link btn-resume"><i class="fa-solid fa-id-card" aria-hidden="true"></i> ประวัติและการอบรม</a>
+        <a href="index.html" class="nav-link btn-lang">English</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="เปิด/ปิดเมนู" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow"><i class="fa-solid fa-sparkle"></i> เสริมพลังคนด้วยเทคโนโลยีและการสื่อสาร</p>
+      <h1 class="hero-title">
+        PORT<br>FOLIO
+      </h1>
+      <p class="hero-name">Pattarawarin Arunsawat</p>
+      <span class="badge badge--dark">สื่อสารองค์กร | นักออกแบบกราฟิก | UI &amp; เว็บ</span>
+    </div>
+    <div class="hero-star hero-star--a" aria-hidden="true">✦</div>
+    <div class="hero-star hero-star--b" aria-hidden="true">✧</div>
+    <div class="hero-star hero-star--c" aria-hidden="true">✦</div>
+
+    <a href="#about" class="scroll-cue" aria-label="เลื่อนลงไปที่เกี่ยวกับฉันและทักษะ">
+      <span class="scroll-cue-label">ดูเพิ่มเติม</span>
+      <span class="scroll-cue-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></span>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT + SKILLS ===================== -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-copy">
+        <p class="section-eyebrow">01 — เกี่ยวกับฉัน</p>
+        <h2 class="section-heading">ผู้ช่วยผู้บริหาร<br>และนักเทคโนโลยีสร้างสรรค์<br>เบื้องหลังการอบรมภายในองค์กรที่ราบรื่น</h2>
+        <p class="about-lede">
+          ผู้เชี่ยวชาญรอบด้านที่เชื่อมงานสนับสนุนผู้บริหาร งานออกแบบกราฟิกและวิดีโอ เข้ากับการพัฒนาเว็บและแดชบอร์ด
+          มีความชำนาญในการดูแลแพลตฟอร์มสรรหาบุคลากร สนับสนุนโปรแกรมการเรียนรู้ภายในองค์กร
+          และนำเครื่องมือ AI มาช่วยให้งานภายในคล่องตัวขึ้น ตั้งแต่การปฐมนิเทศแบบเกมมิฟิเคชัน
+          การสร้างความตระหนักรู้ด้านความปลอดภัยไซเบอร์ ไปจนถึงงานสื่อสารภายในองค์กรที่สร้างผลกระทบสูง
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">6+</span>
+            <span class="stat-label">ปีประสบการณ์ทำงานจริง</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">จุดแข็งหลัก</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">เครื่องมือดิจิทัลและ AI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-matrix" id="skills">
+        <p class="section-eyebrow">02 — ทักษะ</p>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fa-solid fa-briefcase skill-icon"></i>
+            <h3>สนับสนุนผู้บริหาร</h3>
+            <ul>
+              <li>จัดระเบียบข้อมูลและจัดทำรายงาน</li>
+              <li>สนับสนุนงานปฏิบัติการและงานธุรการ</li>
+              <li>ปรับปรุงขั้นตอนการทำงานด้วย AI</li>
+              <li>ประสานงานผู้มีส่วนเกี่ยวข้อง</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-palette skill-icon"></i>
+            <h3>งานออกแบบสร้างสรรค์</h3>
+            <ul>
+              <li>Photoshop, Illustrator, InDesign</li>
+              <li>ตัดต่อวิดีโอและโมชันกราฟิก</li>
+              <li>จัดหน้าสื่อสิ่งพิมพ์และโซเชียลมีเดีย</li>
+              <li>ระบบภาพลักษณ์แบรนด์</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-code skill-icon"></i>
+            <h3>เทคโนโลยีและการพัฒนา</h3>
+            <ul>
+              <li>ดูแลระบบ HR และแพลตฟอร์มสรรหาบุคลากร</li>
+              <li>พัฒนาเว็บฝั่ง Front-end</li>
+              <li>เครื่องมือแสดงผลข้อมูลและรายงาน</li>
+              <li>แก้ไขปัญหาและสนับสนุนงาน IT</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-people-group skill-icon"></i>
+            <h3>บุคลากรและวัฒนธรรมองค์กร</h3>
+            <ul>
+              <li>ออกแบบและจัดอบรม</li>
+              <li>การสื่อสารภายในองค์กร</li>
+              <li>การเรียนรู้แบบเกมมิฟิเคชัน</li>
+              <li>ความตระหนักรู้ด้านความปลอดภัยไซเบอร์</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#portfolio" class="section-jump" aria-label="ไปที่แกลเลอรีผลงาน">
+      <span>แกลเลอรีผลงาน</span>
+      <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- ===================== PORTFOLIO GALLERY ===================== -->
+  <section class="gallery" id="portfolio">
+    <div class="gallery-inner">
+      <p class="section-eyebrow">03 — ผลงานเด่น</p>
+      <h2 class="section-heading">แกลเลอรีผลงาน</h2>
+
+      <div class="filter-bar" id="filterBar" role="tablist" aria-label="กรองผลงานตามหมวดหมู่">
+        <button class="filter-btn is-active" data-filter="all">ทั้งหมด</button>
+        <button class="filter-btn" data-filter="print" id="print-design">งานสิ่งพิมพ์</button>
+        <button class="filter-btn" data-filter="social" id="social-media">โซเชียลมีเดีย</button>
+        <button class="filter-btn" data-filter="branding" id="branding">งานแบรนด์</button>
+        <button class="filter-btn" data-filter="ads" id="ads">โฆษณา</button>
+        <button class="filter-btn" data-filter="illustration" id="illustration">งานภาพประกอบ</button>
+        <button class="filter-btn" data-filter="projects" id="projects">โปรเจกต์</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Cards injected by script.js from data.js -->
+      </div>
+    </div>
+
+    <a href="#deep-dive" class="section-jump" aria-label="ไปที่โปรเจกต์เชิงลึก">
+      <span>โปรเจกต์เชิงลึก</span>
+      <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- ===================== FEATURED DEEP-DIVE PROJECTS ===================== -->
+  <section class="deep-dive" id="deep-dive">
+    <div class="deep-dive-inner">
+      <p class="section-eyebrow">04 — ผลงานเชิงลึก</p>
+      <h2 class="section-heading">โปรเจกต์เชิงลึกที่เลือกมานำเสนอ</h2>
+
+      <article class="case-study">
+        <div class="case-media">
+          <img src="images/012.jpg" alt="แดชบอร์ดแผนปฏิบัติการวัฒนธรรม NSL Family" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 12px 24px rgba(0,0,0,0.08);">
+        </div>
+        
+        <div class="case-copy">
+          <span class="case-tag">วัฒนธรรมองค์กรและการสื่อสารภายใน</span>
+          <h3>แผนปฏิบัติการวัฒนธรรม NSL Family</h3>
+          <p>
+            วางแผนและขับเคลื่อนแผนปฏิบัติการตลอดทั้งปีเพื่อสร้าง "วัฒนธรรม NSL Family" ให้ครอบคลุมทุกสาขาและบริษัทในเครือ โดยเน้นสร้างความรู้สึกเป็นส่วนหนึ่งขององค์กร เสริมความเข้าใจในค่านิยมหลัก และผสานวัฒนธรรมองค์กรเข้ากับการทำงานประจำวัน เพื่อสร้างความผูกพัน ความสุข และการเติบโตอย่างยั่งยืน
+          </p>
+          <ul class="case-stats">
+            <li><strong>95.2%</strong> คะแนนความพึงพอใจสูงสุดของพนักงานต่อกิจกรรมวัฒนธรรมองค์กร (เดือนพฤศจิกายน)</li>
+            <li><strong>+4.11%</strong> ความผูกพันของพนักงานเพิ่มขึ้นจากไตรมาส 1 ถึงไตรมาส 2 ปี 2568 ในสาขา 1 และ 2</li>
+          </ul>
+          <div class="case-tools">
+            <span class="tag">กลยุทธ์วัฒนธรรมองค์กร</span>
+            <span class="tag">ความผูกพันของพนักงาน</span>
+            <span class="tag">สื่อสารภายในองค์กร</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study case-study--reverse">
+        <div class="case-media">
+          <img src="images/013.jpg" alt="การอบรมสร้างความตระหนักรู้ด้านความปลอดภัยไซเบอร์ระดับองค์กร" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 12px 24px rgba(0,0,0,0.08);">
+        </div>
+        
+        <div class="case-copy">
+          <span class="case-tag">การอบรมและสร้างความตระหนักรู้</span>
+          <h3>การอบรมสร้างความตระหนักรู้ด้านความปลอดภัยไซเบอร์ระดับองค์กร</h3>
+          <p>
+            วางแผนและจัดอบรมด้านความปลอดภัยไซเบอร์ทั้งแบบออนไลน์และออนไซต์ พร้อมอินโฟกราฟิกเตือนภัยที่ใช้ภาษาเข้าใจง่าย
+            และยกตัวอย่างภัยคุกคามทางไซเบอร์จากสถานการณ์จริง เพื่อสร้างความเข้าใจและความพร้อมในการรับมือ
+          </p>
+          <ul class="case-stats">
+            <li><strong>กลุ่มเป้าหมาย:</strong> พนักงานที่ใช้คอมพิวเตอร์ของบริษัททั้งหมด 100% <span class="mock-note">(ข้อมูลจำลอง)</span></li>
+            <li><strong>ผ่านเกณฑ์ 100%:</strong> ผู้เข้าอบรมทุกคนได้คะแนนสอบท้ายหลักสูตรมากกว่า 9/10 <span class="mock-note">(ข้อมูลจำลอง)</span></li>
+          </ul>
+          <div class="case-tools">
+            <span class="tag">ออกแบบอินโฟกราฟิก</span>
+            <span class="tag">ความตระหนักรู้ภัยคุกคาม</span>
+            <span class="tag">เป็นวิทยากรออนไซต์</span>
+          </div>
+        </div>
+      </article>
+
+
+       <article class="case-study">
+        <div class="case-media">
+          <img src="images/014.jpg" alt="แดชบอร์ดติดตามสาธารณูปโภค SMART UT" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 12px 24px rgba(0,0,0,0.08);">
+        </div>
+        
+        <div class="case-copy">
+          <span class="case-tag">พัฒนาเว็บและแดชบอร์ด</span>
+          <h3>SMART UT: แดชบอร์ดติดตามสาธารณูปโภค</h3>
+          <p>
+            ออกแบบและพัฒนาแดชบอร์ดบนเว็บเพื่อติดตามและวิเคราะห์การใช้สาธารณูปโภคของโรงงาน ได้แก่ ไฟฟ้า น้ำ แก๊ส และพลังงานแสงอาทิตย์ ระบบสรุปต้นทุนต่อหน่วย เปรียบเทียบกับเป้าหมาย KPI รายปี และแสดงผลผ่านกราฟแนวโน้มต้นทุน (Cost Trend) และสัดส่วนต้นทุน (Cost Breakdown) เพื่อสนับสนุนการตัดสินใจด้วยข้อมูล พัฒนาด้วย HTML, CSS, JavaScript, PHP และฐานข้อมูล SQL
+          </p>
+          <ul class="case-stats">
+            <li><strong>เรียลไทม์</strong> แสดงผลวิเคราะห์ต้นทุนเทียบกับ KPI</li>
+            <li><strong>4</strong> ประเภทสาธารณูปโภคที่ติดตาม <span class="mock-note">(ไฟฟ้า น้ำ แก๊ส โซลาร์)</span></li>
+          </ul>
+          <div class="case-tools">
+            <span class="tag">HTML/CSS/JS</span>
+            <span class="tag">PHP</span>
+            <span class="tag">SQL</span>
+            <span class="tag">UI/UX</span>
+          </div>
+        </div>
+      </article>
+
+    <a href="#contact" class="section-jump" aria-label="ไปที่ช่องทางติดต่อ">
+      <span>ติดต่อ</span>
+      <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <p class="footer-name">Pattarawarin Arunsawat</p>
+        <div class="footer-links">
+          <a href="mailto:pattarawarin.ar@gmail.com"><i class="fa-solid fa-envelope"></i> อีเมล</a>
+          <a href="https://callmeion.github.io/portfolio/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="http://www.linkedin.com/in/pattarawarin-ar" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+      <hr class="footer-rule">
+      <p class="disclaimer">
+        <i class="fa-solid fa-circle-info"></i>
+        ผลงานทั้งหมดเป็นกรณีศึกษาที่ปกปิดข้อมูล นำเสนอเพื่อใช้เป็นพอร์ตโฟลิโอเท่านั้น
+        ชื่อบริษัท ข้อมูลพนักงาน และตัวเลขในแดชบอร์ดถูกจำลองหรือปรับให้เป็นข้อมูลทั่วไป
+        ไม่มีการเปิดเผยข้อมูลกรรมสิทธิ์ ข้อมูลลับ หรือข้อมูลทางธุรกิจของลูกค้า
+      </p>
+      <p class="footer-copy">© <span id="year"></span> Pattarawarin Arunsawat. พัฒนาด้วย HTML, CSS และ JavaScript</p>
+    </div>
+  </footer>
+
+  <!-- Floating back-to-top button (visibility toggled by script.js) -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="data-th.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1034,3 +1034,13 @@ h1, h2, h3, .hero-title, .section-heading {
 }
 /* Resume profile card: make non-link contact rows (phone, location) match the links */
 .profile-links span i { color: var(--color-accent); text-align: center; }
+
+/* =========================================================
+   Thai version (html lang="th") — use Kanit for Thai glyphs
+   ========================================================= */
+html[lang="th"] {
+  --font-display: 'Kanit', 'Playfair Display', Georgia, serif;
+  --font-body: 'Kanit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+html[lang="th"] body { line-height: 1.7; }
+html[lang="th"] .main-nav .btn-lang { font-family: 'Inter', 'Kanit', sans-serif; }

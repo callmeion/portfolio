@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ประวัติและการอบรม — Pattarawarin Arunsawat</title>
+  <meta name="description" content="ประวัติการทำงาน การศึกษา และการอบรมของ Pattarawarin Arunsawat — ผู้ช่วยผู้บริหาร นักเทคโนโลยีสร้างสรรค์ และผู้ขับเคลื่อนวัฒนธรรมองค์กร">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Kanit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="aurora aurora--one" aria-hidden="true"></div>
+  <div class="aurora aurora--two" aria-hidden="true"></div>
+  <div class="aurora aurora--three" aria-hidden="true"></div>
+<!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="index-th.html" class="logo" aria-label="กลับหน้าแรก">PA</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index-th.html#about" class="nav-link">เกี่ยวกับฉัน</a>
+        <a href="index-th.html#skills" class="nav-link">ทักษะ</a>
+        <a href="index-th.html#portfolio" class="nav-link">ผลงานเด่น</a>
+        <a href="index-th.html#deep-dive" class="nav-link">โปรเจกต์เชิงลึก</a>
+        <a href="resume-th.html" class="nav-link btn-resume" aria-current="page"><i class="fa-solid fa-id-card" aria-hidden="true"></i> ประวัติและการอบรม</a>
+        <a href="resume.html" class="nav-link btn-lang">English</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="เปิด/ปิดเมนู" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE TITLE ===================== -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <p class="section-eyebrow">ประวัติและการอบรม</p>
+      <h1 class="section-heading">ประสบการณ์ การศึกษา และการอบรม</h1>
+    </div>
+  </section>
+
+  <!-- ===================== RESUME BODY ===================== -->
+  <main class="resume-page">
+    <div class="resume-layout">
+
+      <aside class="profile-card">
+        <h2>Pattarawarin Arunsawat</h2>
+        <p class="profile-role">People Experience (PX) และ HR Tech</p>
+        <!-- Contact & Links -->
+        <div class="profile-links" style="margin-bottom: 24px; display: flex; flex-direction: column; gap: 8px;">
+          <a href="mailto:pattarawarin.ar@gmail.com"><i class="fa-solid fa-envelope" style="width: 20px;"></i> pattarawarin.ar@gmail.com</a>
+          <span style="color: inherit; font-size: 0.95em;"><i class="fa-solid fa-location-dot" style="width: 20px;"></i> ชลบุรี ประเทศไทย</span>
+          </div>
+
+        <!-- Hard Skills -->
+        <div class="profile-skills" style="margin-bottom: 20px;">
+          <h3 style="font-size: 0.9rem; margin-bottom: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #555;">ทักษะเชิงเทคนิค</h3>
+          <div class="profile-tags">
+            <span class="tag">HR Tech และแดชบอร์ด</span>
+            <span class="tag">ออกแบบประสบการณ์การเรียนรู้ (LXD)</span>
+            <span class="tag">Employer Branding</span>
+            <span class="tag">สื่อสารภายในองค์กร</span>
+            <span class="tag">ออกแบบมัลติมีเดีย</span>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="profile-skills" style="margin-bottom: 24px;">
+          <h3 style="font-size: 0.9rem; margin-bottom: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #555;">ทักษะด้านบุคคล</h3>
+          <div class="profile-tags">
+            <span class="tag">ประสานงานข้ามหน่วยงาน</span>
+            <span class="tag">แก้ปัญหาอย่างสร้างสรรค์</span>
+            <span class="tag">บริหารโครงการ</span>
+            <span class="tag">การพูดในที่สาธารณะ</span>
+
+          </div>
+        </div>
+
+        <button type="button" class="btn-print" onclick="window.print()">
+          <i class="fa-solid fa-print" aria-hidden="true"></i> พิมพ์ / บันทึกเป็น PDF
+        </button>
+      </aside>
+
+      <div class="resume-content">
+        <section class="resume-block" id="experience">
+          <p class="section-eyebrow">ประสบการณ์</p>
+          <h2 class="section-heading">ประวัติการทำงาน</h2>
+          <div class="timeline" id="experienceList"></div>
+        </section>
+
+        <section class="resume-block" id="education">
+          <p class="section-eyebrow">การศึกษา</p>
+          <h2 class="section-heading">ประวัติการศึกษา</h2>
+          <div class="timeline" id="educationList"></div>
+        </section>
+
+        <section class="resume-block" id="training">
+          <p class="section-eyebrow">การอบรม</p>
+          <h2 class="section-heading">หลักสูตรและใบรับรอง</h2>
+          <h3 class="training-sub">หลักสูตรที่ผ่านการอบรม</h3>
+          <div class="training-grid" id="trainingList"></div>
+          <h3 class="training-sub">โปรเจกต์ รางวัล และกิจกรรม</h3>
+          <div class="training-grid" id="deliveredList"></div>
+        </section>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <p class="footer-name">Pattarawarin Arunsawat</p>
+        <div class="footer-links">
+          <a href="mailto:pattarawarin.ar@gmail.com"><i class="fa-solid fa-envelope"></i> อีเมล</a>
+          <a href="https://callmeion.github.io/portfolio/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="http://www.linkedin.com/in/pattarawarin-ar" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+      <hr class="footer-rule">
+      <p class="footer-copy">© <span id="year"></span> Pattarawarin Arunsawat. พัฒนาด้วย HTML, CSS และ JavaScript</p>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="data-th.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
